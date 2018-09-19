@@ -35,8 +35,8 @@ import (
 	"k8s.io/metrics/pkg/apis/custom_metrics"
 	"k8s.io/metrics/pkg/apis/external_metrics"
 
-	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
-	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider/helpers"
+	"github.com/custom-metrics-apiserver/pkg/provider"
+	"github.com/custom-metrics-apiserver/pkg/provider/helpers"
 )
 
 // CustomMetricResource wraps provider.CustomMetricInfo in a struct which stores the Name and Namespace of the resource
@@ -210,10 +210,12 @@ func (p *testingProvider) metricFor(value resource.Quantity, name types.Namespac
 	if err != nil {
 		return nil, err
 	}
-
+	metricId := custom_metrics.MetricIdentifier{
+		Name: info.Metric,
+	}
 	return &custom_metrics.MetricValue{
 		DescribedObject: objRef,
-		MetricName:      info.Metric,
+		Metric:      metricId,
 		Timestamp:       metav1.Time{time.Now()},
 		Value:           value,
 	}, nil

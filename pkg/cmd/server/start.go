@@ -20,9 +20,10 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/apiserver"
+	"github.com/custom-metrics-apiserver/pkg/apiserver"
 	genericapiserver "k8s.io/apiserver/pkg/server"
 	genericoptions "k8s.io/apiserver/pkg/server/options"
+	"k8s.io/client-go/rest"
 )
 
 type CustomMetricsAdapterServerOptions struct {
@@ -59,7 +60,9 @@ func (o CustomMetricsAdapterServerOptions) Config() (*apiserver.Config, error) {
 	}
 
 	serverConfig := genericapiserver.NewConfig(apiserver.Codecs)
-	if err := o.SecureServing.ApplyTo(serverConfig); err != nil {
+	foo := &rest.Config{}
+	bar := &genericapiserver.SecureServingInfo{}
+	if err := o.SecureServing.ApplyTo(&bar, &foo); err != nil {
 		return nil, err
 	}
 

@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9c00aff-a3a1-48ec-a094-ad3b684dc1de" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/getting-started.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting-started.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glide.lock" beforeDir="false" afterPath="$PROJECT_DIR$/glide.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glide.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/glide.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apiserver/apiserver.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/apiserver/apiserver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apiserver/cmapis.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/apiserver/cmapis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apiserver/emapis.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/apiserver/emapis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/apiserver/installer/apiserver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/apiserver/installer/apiserver_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cmd/builder.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cmd/builder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/cmd/server/start.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/cmd/server/start.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/provider/helpers/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/provider/helpers/helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/registry/custom_metrics/reststorage.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/registry/custom_metrics/reststorage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/registry/external_metrics/reststorage.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/registry/external_metrics/reststorage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-adapter/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/test-adapter/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-adapter/provider/provider.go" beforeDir="false" afterPath="$PROJECT_DIR$/test-adapter/provider/provider.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/Godeps/Godeps.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/Godeps/Godeps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/apps/v1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/apps/v1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/apps/v1beta1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/apps/v1beta1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/apps/v1beta2/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/apps/v1beta2/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/autoscaling/v1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/autoscaling/v1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/batch/v1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/batch/v1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/core/v1/generated.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/core/v1/generated.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/core/v1/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/core/v1/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/core/v1/types_swagger_doc_generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/core/v1/types_swagger_doc_generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/core/v1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/core/v1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/extensions/v1beta1/generated.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/extensions/v1beta1/generated.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/extensions/v1beta1/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/extensions/v1beta1/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/extensions/v1beta1/types_swagger_doc_generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/extensions/v1beta1/types_swagger_doc_generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/extensions/v1beta1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/extensions/v1beta1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/networking/v1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/networking/v1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/policy/v1beta1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/policy/v1beta1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/rbac/v1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/rbac/v1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/roundtrip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/roundtrip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/api/storage/v1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/api/storage/v1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/Godeps/Godeps.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/Godeps/Godeps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/api/resource/quantity.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/api/resource/quantity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/api/testing/codec.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/api/testing/fuzzer/fuzzer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/api/testing/fuzzer/valuefuzz.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/api/testing/fuzzer/valuefuzz_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/api/testing/roundtrip/roundtrip.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/fuzzer/fuzzer.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/fuzzer/fuzzer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion/conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion/conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion/roundtrip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion/roundtrip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/conversion_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/conversion_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/generated.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/generated.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/generated.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/generated.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/helpers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/helpers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/types_swagger_doc_generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/types_swagger_doc_generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/validation/validation.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/validation/validation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/validation/validation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/validation/validation_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/watch.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/watch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1beta1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/meta/v1beta1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/testapigroup/fuzzer/fuzzer.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/testapigroup/fuzzer/fuzzer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/testapigroup/install/roundtrip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/testapigroup/install/roundtrip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/conversion/converter.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/conversion/converter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/conversion/converter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/conversion/converter_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/labels/selector.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/labels/selector.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/labels/selector_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/labels/selector_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/codec.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/codec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/embedded.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/embedded.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/extension.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/extension.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/interfaces.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/schema/group_version.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/schema/group_version.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/scheme.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/scheme.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/scheme_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/scheme_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/serializer/json/json.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/serializer/json/json.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/serializer/json/json_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/serializer/json/json_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/serializer/versioning/versioning.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/serializer/versioning/versioning.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/serializer/versioning/versioning_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/serializer/versioning/versioning_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/runtime/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/apis_meta_v1_unstructed_unstructure_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/apis_meta_v1_unstructed_unstructure_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/runtime_helper_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/runtime_helper_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/runtime_serializer_protobuf_protobuf_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/runtime_serializer_protobuf_protobuf_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/runtime_unversioned_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/runtime_unversioned_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/test/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/diff/diff.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/diff/diff.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/diff/diff_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/diff/diff_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/duration/duration.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/duration/duration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/jsonmergepatch/patch.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/jsonmergepatch/patch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/mergepatch/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/mergepatch/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/mergepatch/util_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/mergepatch/util_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/net/http.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/net/http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/strategicpatch/OWNERS" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/strategicpatch/OWNERS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/watch/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apimachinery/pkg/watch/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/Godeps/Godeps.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/Godeps/Godeps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/attributes.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/attributes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/audit_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/audit_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/chain_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/chain_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/config_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/errors_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/errors_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/initializer/initializer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/initializer/initializer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/interfaces.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/metrics/metrics_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/metrics/metrics_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/initialization/initialization_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/initialization/initialization_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/namespace/lifecycle/admission_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/namespace/lifecycle/admission_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/config/apis/webhookadmission/v1alpha1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/config/apis/webhookadmission/v1alpha1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/config/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/config/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/config/kubeconfig.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/config/kubeconfig.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/errors/statuserror.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/errors/statuserror.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/generic/conversion_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/generic/conversion_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/mutating/dispatcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/mutating/dispatcher.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/mutating/dispatcher_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/mutating/dispatcher_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/mutating/plugin_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/mutating/plugin_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/namespace/matcher_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/namespace/matcher_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/rules/rules_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/rules/rules_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/testing/testcase.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/testing/testcase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/validating/dispatcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/validating/dispatcher.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/validating/plugin_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/admission/plugin/webhook/validating/plugin_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/apiserver/v1alpha1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/apiserver/v1alpha1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/install/install.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/install/install.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/install/roundtrip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/install/roundtrip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1alpha1/generated.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1alpha1/generated.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1alpha1/generated.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1alpha1/generated.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1alpha1/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1alpha1/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1alpha1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1alpha1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1alpha1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1alpha1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1beta1/generated.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1beta1/generated.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1beta1/generated.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1beta1/generated.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1beta1/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1beta1/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1beta1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1beta1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1beta1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/audit/v1beta1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/example/fuzzer/fuzzer.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/example/fuzzer/fuzzer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/example/install/roundtrip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/example/install/roundtrip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/example/v1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/example/v1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/example2/install/roundtrip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/example2/install/roundtrip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/example2/v1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/apis/example2/v1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/policy/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/policy/reader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/policy/reader_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/policy/reader_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/request_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/request_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/scheme.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/scheme.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/union_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/audit/union_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/authentication/request/headerrequest/requestheader.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/authentication/request/headerrequest/requestheader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/authentication/request/headerrequest/requestheader_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/authentication/request/headerrequest/requestheader_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/authentication/request/x509/x509.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/authentication/request/x509/x509.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/authentication/request/x509/x509_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/authentication/request/x509/x509_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/apiserver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/apiserver_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/audit_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/audit_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/filters/impersonation.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/filters/impersonation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/filters/impersonation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/filters/impersonation_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/groupversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/groupversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/create.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/get.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/get.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/patch.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/patch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/rest.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/rest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/rest_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/rest_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/update.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/update.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/watch.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/handlers/watch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/installer.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/installer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/metrics/metrics.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/endpoints/metrics/metrics.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/features/kube_features.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/features/kube_features.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/generic/registry/storage_factory.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/generic/registry/storage_factory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/generic/registry/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/generic/registry/store.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/generic/registry/store_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/generic/registry/store_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/generic/testing/tester.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/generic/testing/tester.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/rest/create.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/rest/create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/rest/rest.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/rest/rest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/rest/resttest/resttest.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/rest/resttest/resttest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/rest/update.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/rest/update.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/registry/rest/zz_generated.deepcopy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/config_selfclient.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/config_selfclient.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/config_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/genericapiserver.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/genericapiserver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/genericapiserver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/genericapiserver_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/healthz/healthz.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/healthz/healthz.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/httplog/httplog.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/httplog/httplog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/admission.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/admission.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/audit.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/audit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/authentication.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/authentication.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/recommended.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/recommended.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/serving.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/serving.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/serving_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/serving_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/serving_with_loopback.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/serving_with_loopback.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/resourceconfig/helpers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/resourceconfig/helpers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/routes/profiling.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/routes/profiling.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/cacher.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/cacher_whitebox_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/api_object_versioner.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/api_object_versioner.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/api_object_versioner_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/api_object_versioner_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/etcd_helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/etcd_helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/etcd_helper_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/etcd_helper_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/etcd_watcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/etcd_watcher.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/etcd_watcher_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd/etcd_watcher_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd3/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd3/store.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd3/store_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd3/store_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd3/watcher_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/etcd3/watcher_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/interfaces.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/storagebackend/factory/etcd3.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/storagebackend/factory/etcd3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/storagebackend/factory/tls_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/storagebackend/factory/tls_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/tests/cacher_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/tests/cacher_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/time_budget.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/time_budget_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/util_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/util_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/value/encrypt/envelope/grpc_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/value/encrypt/envelope/grpc_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/value/encrypt/envelope/grpc_service_unix_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/value/encrypt/envelope/grpc_service_unix_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/watch_cache.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/storage/watch_cache_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/util/feature/feature_gate.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/util/feature/feature_gate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/buffered/buffered.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/buffered/buffered.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/fake/fake.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/fake/fake.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/log/backend_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/log/backend_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/truncate/truncate.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/truncate/truncate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/truncate/truncate_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/truncate/truncate_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/webhook/webhook_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/audit/webhook/webhook_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/authenticator/token/webhook/webhook.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/authenticator/token/webhook/webhook.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/authorizer/webhook/webhook.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/apiserver/plugin/pkg/authorizer/webhook/webhook.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/Godeps/Godeps.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/Godeps/Godeps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/deprecated-dynamic/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/deprecated-dynamic/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/discovery/cached_discovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/discovery/cached_discovery.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/discovery/round_tripper.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/discovery/round_tripper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/discovery/unstructured.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/dynamic/client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/dynamic/client_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/dynamic/fake/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/dynamic/fake/simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/dynamic/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/dynamic/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/dynamic/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/dynamic/simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/admissionregistration/v1alpha1/initializerconfiguration.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/admissionregistration/v1alpha1/initializerconfiguration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/admissionregistration/v1beta1/mutatingwebhookconfiguration.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/admissionregistration/v1beta1/mutatingwebhookconfiguration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/admissionregistration/v1beta1/validatingwebhookconfiguration.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/admissionregistration/v1beta1/validatingwebhookconfiguration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1/controllerrevision.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1/controllerrevision.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1/daemonset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1/daemonset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1/deployment.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1/deployment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1/replicaset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1/replicaset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1/statefulset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1/statefulset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta1/controllerrevision.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta1/controllerrevision.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta1/deployment.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta1/deployment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta1/statefulset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta1/statefulset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta2/controllerrevision.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta2/controllerrevision.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta2/daemonset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta2/daemonset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta2/deployment.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta2/deployment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta2/replicaset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta2/replicaset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta2/statefulset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/apps/v1beta2/statefulset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/autoscaling/v1/horizontalpodautoscaler.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/autoscaling/v1/horizontalpodautoscaler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/autoscaling/v2beta1/horizontalpodautoscaler.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/autoscaling/v2beta1/horizontalpodautoscaler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/batch/v1/job.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/batch/v1/job.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/batch/v1beta1/cronjob.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/batch/v1beta1/cronjob.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/batch/v2alpha1/cronjob.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/batch/v2alpha1/cronjob.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/certificates/v1beta1/certificatesigningrequest.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/certificates/v1beta1/certificatesigningrequest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/componentstatus.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/componentstatus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/configmap.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/configmap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/endpoints.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/endpoints.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/event.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/event.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/limitrange.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/limitrange.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/namespace.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/namespace.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/persistentvolume.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/persistentvolume.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/persistentvolumeclaim.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/persistentvolumeclaim.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/pod.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/pod.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/podtemplate.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/podtemplate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/replicationcontroller.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/replicationcontroller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/resourcequota.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/resourcequota.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/secret.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/secret.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/serviceaccount.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/core/v1/serviceaccount.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/events/v1beta1/event.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/events/v1beta1/event.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/extensions/v1beta1/daemonset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/extensions/v1beta1/daemonset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/extensions/v1beta1/deployment.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/extensions/v1beta1/deployment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/extensions/v1beta1/ingress.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/extensions/v1beta1/ingress.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/extensions/v1beta1/podsecuritypolicy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/extensions/v1beta1/podsecuritypolicy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/extensions/v1beta1/replicaset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/extensions/v1beta1/replicaset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/factory.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/factory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/generic.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/generic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/networking/v1/networkpolicy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/networking/v1/networkpolicy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/policy/v1beta1/poddisruptionbudget.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/policy/v1beta1/poddisruptionbudget.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/policy/v1beta1/podsecuritypolicy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/policy/v1beta1/podsecuritypolicy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1/clusterrole.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1/clusterrole.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1/clusterrolebinding.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1/clusterrolebinding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1/role.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1/rolebinding.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1/rolebinding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1alpha1/clusterrole.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1alpha1/clusterrole.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1alpha1/clusterrolebinding.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1alpha1/clusterrolebinding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1alpha1/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1alpha1/role.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1alpha1/rolebinding.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1alpha1/rolebinding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1beta1/clusterrole.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1beta1/clusterrole.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1beta1/clusterrolebinding.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1beta1/clusterrolebinding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1beta1/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1beta1/role.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1beta1/rolebinding.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/rbac/v1beta1/rolebinding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/scheduling/v1alpha1/priorityclass.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/scheduling/v1alpha1/priorityclass.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/scheduling/v1beta1/priorityclass.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/scheduling/v1beta1/priorityclass.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/settings/v1alpha1/podpreset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/settings/v1alpha1/podpreset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/storage/v1/storageclass.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/storage/v1/storageclass.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/storage/v1alpha1/volumeattachment.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/storage/v1alpha1/volumeattachment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/storage/v1beta1/storageclass.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/storage/v1beta1/storageclass.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/storage/v1beta1/volumeattachment.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/informers/storage/v1beta1/volumeattachment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/clientset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/clientset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/fake/clientset_generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/fake/clientset_generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/fake/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/fake/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/scheme/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/scheme/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/controllerrevision.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/controllerrevision.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/daemonset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/daemonset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/deployment.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/deployment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/fake/fake_controllerrevision.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/fake/fake_controllerrevision.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/fake/fake_daemonset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/fake/fake_daemonset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/fake/fake_deployment.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/fake/fake_deployment.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/fake/fake_replicaset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/fake/fake_replicaset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/fake/fake_statefulset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/fake/fake_statefulset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/replicaset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/replicaset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/statefulset.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/apps/v1/statefulset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/authorization/v1/fake/fake_subjectaccessreview_expansion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/authorization/v1/fake/fake_subjectaccessreview_expansion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/autoscaling/v1/fake/fake_horizontalpodautoscaler.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/autoscaling/v1/fake/fake_horizontalpodautoscaler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/autoscaling/v1/horizontalpodautoscaler.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/autoscaling/v1/horizontalpodautoscaler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/batch/v1/fake/fake_job.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/batch/v1/fake/fake_job.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/batch/v1/job.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/batch/v1/job.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/componentstatus.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/componentstatus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/configmap.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/configmap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/endpoints.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/endpoints.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/event.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/event.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_componentstatus.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_componentstatus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_configmap.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_configmap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_endpoints.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_endpoints.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_event.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_event.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_limitrange.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_limitrange.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_namespace.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_namespace.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_node.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_persistentvolume.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_persistentvolume.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_persistentvolumeclaim.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_persistentvolumeclaim.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_pod.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_pod.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_podtemplate.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_podtemplate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_replicationcontroller.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_replicationcontroller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_resourcequota.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_resourcequota.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_secret.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_secret.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_serviceaccount.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/fake/fake_serviceaccount.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/limitrange.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/limitrange.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/namespace.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/namespace.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/persistentvolume.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/persistentvolume.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/persistentvolumeclaim.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/persistentvolumeclaim.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/pod.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/pod.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/podtemplate.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/podtemplate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/replicationcontroller.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/replicationcontroller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/resourcequota.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/resourcequota.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/secret.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/secret.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/serviceaccount.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/core/v1/serviceaccount.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/networking/v1/fake/fake_networkpolicy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/networking/v1/fake/fake_networkpolicy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/networking/v1/networkpolicy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/networking/v1/networkpolicy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/clusterrole.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/clusterrole.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/clusterrolebinding.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/clusterrolebinding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/fake/fake_clusterrole.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/fake/fake_clusterrole.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/fake/fake_clusterrolebinding.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/fake/fake_clusterrolebinding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/fake/fake_role.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/fake/fake_role.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/fake/fake_rolebinding.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/fake/fake_rolebinding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/role.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/rolebinding.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1/rolebinding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/storage/v1/fake/fake_storageclass.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/storage/v1/fake/fake_storageclass.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/storage/v1/storageclass.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/kubernetes/typed/storage/v1/storageclass.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/pkg/apis/clientauthentication/v1alpha1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/pkg/apis/clientauthentication/v1alpha1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/pkg/apis/clientauthentication/v1beta1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/pkg/apis/clientauthentication/v1beta1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/plugin/pkg/client/auth/exec/exec.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/plugin/pkg/client/auth/exec/exec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/rest/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/rest/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/rest/fake/fake.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/rest/fake/fake.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/rest/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/rest/request.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/restmapper/discovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/restmapper/discovery.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/roundtrip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/roundtrip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/scheme/appsv1beta1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/scheme/appsv1beta1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/scheme/appsv1beta2/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/scheme/appsv1beta2/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/scheme/autoscalingv1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/scheme/autoscalingv1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/scheme/extensionsv1beta1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/scheme/extensionsv1beta1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/scale/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/tools/cache/reflector.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/tools/cache/reflector.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/tools/clientcmd/api/latest/latest.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/tools/clientcmd/api/latest/latest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/tools/leaderelection/leaderelection.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/tools/leaderelection/leaderelection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/tools/remotecommand/remotecommand.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/tools/remotecommand/remotecommand.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/transport/round_trippers.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/transport/round_trippers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/transport/round_trippers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/transport/round_trippers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/util/cert/cert.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/util/cert/cert.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/util/certificate/certificate_manager.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/util/certificate/certificate_manager.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/util/certificate/certificate_manager_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/util/certificate/certificate_manager_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/util/flowcontrol/backoff_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/util/flowcontrol/backoff_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/client-go/util/jsonpath/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/client-go/util/jsonpath/parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/kube-openapi/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/kube-openapi/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/kube-openapi/cmd/openapi-gen/openapi-gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/kube-openapi/cmd/openapi-gen/openapi-gen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/kube-openapi/pkg/aggregator/aggregator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/kube-openapi/pkg/aggregator/aggregator_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/kube-openapi/pkg/generators/openapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/kube-openapi/pkg/generators/openapi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/kube-openapi/test/integration/integration_suite_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/kube-openapi/test/integration/integration_suite_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/Godeps/Godeps.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/Godeps/Godeps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/IMPLEMENTATIONS.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/IMPLEMENTATIONS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/hack/update-codegen.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/hack/update-codegen.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/install/install.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/install/install.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/generated.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/generated.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/generated.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/generated.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/v1beta1/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/zz_generated.deepcopy.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/zz_generated.deepcopy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/external_metrics/v1beta1/generated.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/external_metrics/v1beta1/generated.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/external_metrics/v1beta1/generated.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/external_metrics/v1beta1/generated.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/external_metrics/v1beta1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/external_metrics/v1beta1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1alpha1/generated.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1alpha1/generated.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1alpha1/generated.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1alpha1/generated.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1alpha1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1alpha1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1beta1/generated.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1beta1/generated.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1beta1/generated.proto" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1beta1/generated.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1beta1/zz_generated.conversion.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/metrics/v1beta1/zz_generated.conversion.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/clientset.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/fake/clientset_generated.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/fake/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/fake/register.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/scheme/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/scheme/register.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1alpha1/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1alpha1/fake/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1alpha1/fake/fake_metrics_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1alpha1/fake/fake_nodemetrics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1alpha1/fake/fake_podmetrics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1alpha1/generated_expansion.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1alpha1/metrics_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1alpha1/nodemetrics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1alpha1/podmetrics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1beta1/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1beta1/fake/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1beta1/fake/fake_metrics_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1beta1/fake/fake_nodemetrics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1beta1/fake/fake_podmetrics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1beta1/generated_expansion.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1beta1/metrics_client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1beta1/nodemetrics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1beta1/podmetrics.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/custom_metrics/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/custom_metrics/fake/fake_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/custom_metrics/fake/fake_client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/custom_metrics/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/custom_metrics/interfaces.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/external_metrics/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/client/external_metrics/interfaces.go" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="glide.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/glide.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiserver.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/apiserver/apiserver.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+              <folding>
+                <element signature="e#590#1079#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cmapis.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/apiserver/cmapis.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="provider.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-adapter/provider/provider.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="227" column="23" lean-forward="true" selection-start-line="227" selection-start-column="23" selection-end-line="227" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pkg/cmd/server/start.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+              <folding>
+                <element signature="e#587#767#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/config.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="246" column="5" selection-start-line="246" selection-start-column="5" selection-end-line="246" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serving_with_loopback.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/serving_with_loopback.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interfaces.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/provider/interfaces.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="types.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/types.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="glide.lock" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/glide.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9195">
+              <caret line="613" column="27" selection-start-line="613" selection-start-column="27" selection-end-line="613" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>custom</find>
+      <find>github.com/kubernetes-incubator</find>
+    </findStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/glide.yaml" />
+        <option value="$PROJECT_DIR$/glide.lock" />
+        <option value="$PROJECT_DIR$/pkg/apiserver/apiserver.go" />
+        <option value="$PROJECT_DIR$/pkg/apiserver/cmapis.go" />
+        <option value="$PROJECT_DIR$/test-adapter/provider/provider.go" />
+        <option value="$PROJECT_DIR$/pkg/cmd/server/start.go" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="390" />
+    <option name="y" value="25" />
+    <option name="width" value="1050" />
+    <option name="height" value="875" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="custom-metrics-apiserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="custom-metrics-apiserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="custom-metrics-apiserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="custom-metrics-apiserver" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="custom-metrics-apiserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="custom-metrics-apiserver" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
+              <item name="apiserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="custom-metrics-apiserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="custom-metrics-apiserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="custom-metrics-apiserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="custom-metrics-apiserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="pkg/cmd/server/start.go&#9;FILE&#9;file:///home/charly/go/src/github.com/custom-metrics-apiserver/pkg/cmd/server/start.go&#10;test-adapter/provider/provider.go&#9;FILE&#9;file:///home/charly/go/src/github.com/custom-metrics-apiserver/test-adapter/provider/provider.go" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="390" y="25" width="1050" height="875" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08761905" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/glide.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9195">
+          <caret line="613" column="27" selection-start-line="613" selection-start-column="27" selection-end-line="613" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glide.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/apiserver/apiserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding>
+            <element signature="e#590#1079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/apiserver/cmapis.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/provider/interfaces.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/k8s.io/metrics/pkg/apis/custom_metrics/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-adapter/provider/provider.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="227" column="23" lean-forward="true" selection-start-line="227" selection-start-column="23" selection-end-line="227" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/options/serving_with_loopback.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/k8s.io/apiserver/pkg/server/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="246" column="5" selection-start-line="246" selection-start-column="5" selection-end-line="246" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/cmd/server/start.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="e#587#767#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

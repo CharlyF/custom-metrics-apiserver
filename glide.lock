@@ -1,8 +1,12 @@
-hash: 7abe959d10d6e0f3642bda9ea8c380d882933c0c9645dd13955253faf9b1118b
-updated: 2018-08-25T22:25:14.99784445Z
+hash: 0c11f5abd23a090c0f8e7e8a751839e3e44d460db6ccd4730f3d43b23845a53c
+updated: 2018-09-19T12:12:58.336767058-04:00
 imports:
 - name: bitbucket.org/ww/goautoneg
   version: 75cd24fc2f2c2a2088577d12123ddee5f54e0675
+- name: github.com/Azure/go-ansiterm
+  version: 19f72df4d05d31cbe1c56bfc8045c96babff6c7e
+  subpackages:
+  - winterm
 - name: github.com/beorn7/perks
   version: 3ac7bf7a47d159a033b107610db8a1b6575507a4
   subpackages:
@@ -96,6 +100,11 @@ imports:
   version: 782f4967f2dc4564575ca782fe2d04090b5faca8
   subpackages:
   - spew
+- name: github.com/docker/docker
+  version: 4f3616fb1c112e206b88cb7a9922bf49067a7756
+  subpackages:
+  - pkg/term
+  - pkg/term/windows
 - name: github.com/elazarl/go-bindata-assetfs
   version: 3dcc96556217539f50599357fb481ac0dc7439b9
 - name: github.com/emicklei/go-restful
@@ -142,10 +151,13 @@ imports:
   - OpenAPIv2
   - compiler
   - extensions
+  - extensions
 - name: github.com/gregjones/httpcache
   version: 787624de3eb7bd915c329cba748687a3b22666a6
   subpackages:
   - diskcache
+- name: github.com/grpc-ecosystem/go-grpc-prometheus
+  version: 2500245aa6110c562d17020fb31a2c133d737799
 - name: github.com/hashicorp/golang-lru
   version: a0d98a5f288019575c6d1f4bb1573fef2d1fcdc4
   subpackages:
@@ -196,6 +208,8 @@ imports:
   version: 8a290539e2e8629dbc4e6bad948158f790ec31f4
 - name: github.com/PuerkitoBio/urlesc
   version: 5bd2802263f21d8788851d5305584c82a5c75d7e
+- name: github.com/sirupsen/logrus
+  version: 89742aefa4b206dcf400792f3bd35b542998eb3b
 - name: github.com/spf13/cobra
   version: c439c4fa093711d42e1b01acb1235b52004753c1
 - name: github.com/spf13/pflag
@@ -283,7 +297,7 @@ imports:
 - name: gopkg.in/yaml.v2
   version: 670d4cfef0544295bc27a114dbac37980d83185a
 - name: k8s.io/api
-  version: 00c78f6603af046dfcada47ba511ddc94e7a64ce
+  version: 70491ec73e10be2989242c913738f049a37e72c7
   subpackages:
   - admission/v1beta1
   - admissionregistration/v1alpha1
@@ -301,6 +315,7 @@ imports:
   - batch/v1beta1
   - batch/v2alpha1
   - certificates/v1beta1
+  - coordination/v1beta1
   - core/v1
   - events/v1beta1
   - extensions/v1beta1
@@ -316,7 +331,7 @@ imports:
   - storage/v1alpha1
   - storage/v1beta1
 - name: k8s.io/apimachinery
-  version: 1c56055d3f2ff0ae5ff61d86dc8c88d2928b7ab3
+  version: d128f427fda3db9a4d1ebbf3d54b4949a3356662
   subpackages:
   - pkg/api/equality
   - pkg/api/errors
@@ -351,6 +366,7 @@ imports:
   - pkg/util/intstr
   - pkg/util/json
   - pkg/util/mergepatch
+  - pkg/util/naming
   - pkg/util/net
   - pkg/util/rand
   - pkg/util/runtime
@@ -367,7 +383,7 @@ imports:
   - third_party/forked/golang/json
   - third_party/forked/golang/reflect
 - name: k8s.io/apiserver
-  version: 15cbd7efdeb242a93307546b08843d55dcfddc33
+  version: 4e7be504bf8670b1b36388e3ce2d097c6347373a
   subpackages:
   - pkg/admission
   - pkg/admission/configuration
@@ -390,6 +406,7 @@ imports:
   - pkg/apis/apiserver/v1alpha1
   - pkg/apis/audit
   - pkg/apis/audit/install
+  - pkg/apis/audit/v1
   - pkg/apis/audit/v1alpha1
   - pkg/apis/audit/v1beta1
   - pkg/apis/audit/validation
@@ -434,6 +451,7 @@ imports:
   - pkg/server/routes/data/swagger
   - pkg/server/storage
   - pkg/storage
+  - pkg/storage/cacher
   - pkg/storage/errors
   - pkg/storage/etcd
   - pkg/storage/etcd/metrics
@@ -443,6 +461,7 @@ imports:
   - pkg/storage/storagebackend
   - pkg/storage/storagebackend/factory
   - pkg/storage/value
+  - pkg/util/dryrun
   - pkg/util/feature
   - pkg/util/flag
   - pkg/util/flushwriter
@@ -458,7 +477,7 @@ imports:
   - plugin/pkg/authenticator/token/webhook
   - plugin/pkg/authorizer/webhook
 - name: k8s.io/client-go
-  version: 615dfd3eb0c3d083e20c404dea7dfc63bd032ee1
+  version: bdfc4cfc125f556bfe46fff68207767a605b64ed
   subpackages:
   - discovery
   - dynamic
@@ -479,6 +498,8 @@ imports:
   - informers/batch/v2alpha1
   - informers/certificates
   - informers/certificates/v1beta1
+  - informers/coordination
+  - informers/coordination/v1beta1
   - informers/core
   - informers/core/v1
   - informers/events
@@ -520,6 +541,7 @@ imports:
   - kubernetes/typed/batch/v1beta1
   - kubernetes/typed/batch/v2alpha1
   - kubernetes/typed/certificates/v1beta1
+  - kubernetes/typed/coordination/v1beta1
   - kubernetes/typed/core/v1
   - kubernetes/typed/events/v1beta1
   - kubernetes/typed/extensions/v1beta1
@@ -545,6 +567,7 @@ imports:
   - listers/batch/v1beta1
   - listers/batch/v2alpha1
   - listers/certificates/v1beta1
+  - listers/coordination/v1beta1
   - listers/core/v1
   - listers/events/v1beta1
   - listers/extensions/v1beta1
@@ -589,7 +612,7 @@ imports:
   - util/integer
   - util/retry
 - name: k8s.io/kube-openapi
-  version: 91cfa479c814065e420cee7ed227db0f63a5854e
+  version: 0cf8f7e6ed1d2e3d47d02e3b6e559369af24d803
   subpackages:
   - pkg/builder
   - pkg/common
@@ -597,11 +620,12 @@ imports:
   - pkg/util
   - pkg/util/proto
 - name: k8s.io/metrics
-  version: baa04983db4e01d02a16d9c9fe32dd5b478b3248
+  version: c368fb9b71245441cd3268fffdba58b28b9b4863
   subpackages:
   - pkg/apis/custom_metrics
   - pkg/apis/custom_metrics/install
   - pkg/apis/custom_metrics/v1beta1
+  - pkg/apis/custom_metrics/v1beta2
   - pkg/apis/external_metrics
   - pkg/apis/external_metrics/install
   - pkg/apis/external_metrics/v1beta1
