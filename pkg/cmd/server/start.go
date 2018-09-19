@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/custom-metrics-apiserver/pkg/apiserver"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/apiserver"
 	genericapiserver "k8s.io/apiserver/pkg/server"
 	genericoptions "k8s.io/apiserver/pkg/server/options"
 	"k8s.io/client-go/rest"

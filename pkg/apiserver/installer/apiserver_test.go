@@ -41,10 +41,10 @@ import (
 	installem "k8s.io/metrics/pkg/apis/external_metrics/install"
 	emv1beta1 "k8s.io/metrics/pkg/apis/external_metrics/v1beta1"
 
-	"github.com/custom-metrics-apiserver/pkg/provider"
-	custommetricstorage "github.com/custom-metrics-apiserver/pkg/registry/custom_metrics"
-	externalmetricstorage "github.com/custom-metrics-apiserver/pkg/registry/external_metrics"
-	sampleprovider "github.com/custom-metrics-apiserver/test-adapter/provider"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/provider"
+	custommetricstorage "github.com/CharlyF/custom-metrics-apiserver/pkg/registry/custom_metrics"
+	externalmetricstorage "github.com/CharlyF/custom-metrics-apiserver/pkg/registry/external_metrics"
+	sampleprovider "github.com/CharlyF/custom-metrics-apiserver/test-adapter/provider"
 	"k8s.io/metrics/pkg/apis/external_metrics"
 )
 

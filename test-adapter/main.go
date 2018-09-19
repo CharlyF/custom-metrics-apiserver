@@ -26,9 +26,9 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/apiserver/pkg/util/logs"
 
-	basecmd "github.com/custom-metrics-apiserver/pkg/cmd"
-	"github.com/custom-metrics-apiserver/pkg/provider"
-	fakeprov "github.com/custom-metrics-apiserver/test-adapter/provider"
+	basecmd "github.com/CharlyF/custom-metrics-apiserver/pkg/cmd"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/provider"
+	fakeprov "github.com/CharlyF/custom-metrics-apiserver/test-adapter/provider"
 )
 
 type SampleAdapter struct {

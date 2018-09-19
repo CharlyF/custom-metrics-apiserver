@@ -30,10 +30,10 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/custom-metrics-apiserver/pkg/apiserver"
-	"github.com/custom-metrics-apiserver/pkg/cmd/server"
-	"github.com/custom-metrics-apiserver/pkg/dynamicmapper"
-	"github.com/custom-metrics-apiserver/pkg/provider"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/apiserver"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/cmd/server"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/dynamicmapper"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/provider"
 )
 
 // AdapterBase provides a base set of functionality for any custom metrics adapter.
