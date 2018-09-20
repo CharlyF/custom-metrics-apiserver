@@ -216,7 +216,6 @@ func (b *AdapterBase) WithExternalMetrics(p provider.ExternalMetricsProvider) {
 func (b *AdapterBase) Config() (*apiserver.Config, error) {
 	if b.config == nil {
 		b.InstallFlags() // just to be sure
-
 		config, err := b.CustomMetricsAdapterServerOptions.Config()
 		if err != nil {
 			return nil, err
@@ -234,6 +233,7 @@ func (b *AdapterBase) Config() (*apiserver.Config, error) {
 func (b *AdapterBase) Server() (*apiserver.CustomMetricsAdapterServer, error) {
 	if b.server == nil {
 		config, err := b.Config()
+
 		if err != nil {
 			return nil, err
 		}

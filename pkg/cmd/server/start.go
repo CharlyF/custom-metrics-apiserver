@@ -23,7 +23,6 @@ import (
 	"github.com/CharlyF/custom-metrics-apiserver/pkg/apiserver"
 	genericapiserver "k8s.io/apiserver/pkg/server"
 	genericoptions "k8s.io/apiserver/pkg/server/options"
-	"k8s.io/client-go/rest"
 )
 
 type CustomMetricsAdapterServerOptions struct {
@@ -60,9 +59,8 @@ func (o CustomMetricsAdapterServerOptions) Config() (*apiserver.Config, error) {
 	}
 
 	serverConfig := genericapiserver.NewConfig(apiserver.Codecs)
-	foo := &rest.Config{}
-	bar := &genericapiserver.SecureServingInfo{}
-	if err := o.SecureServing.ApplyTo(&bar, &foo); err != nil {
+
+	if err := o.SecureServing.ApplyTo(&serverConfig.SecureServing, &serverConfig.LoopbackClientConfig); err != nil {
 		return nil, err
 	}
 
