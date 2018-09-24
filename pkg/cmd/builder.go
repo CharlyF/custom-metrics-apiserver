@@ -30,10 +30,10 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/apiserver"
-	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/cmd/server"
-	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/dynamicmapper"
-	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/apiserver"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/cmd/server"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/dynamicmapper"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/provider"
 )
 
 // AdapterBase provides a base set of functionality for any custom metrics adapter.
@@ -216,7 +216,6 @@ func (b *AdapterBase) WithExternalMetrics(p provider.ExternalMetricsProvider) {
 func (b *AdapterBase) Config() (*apiserver.Config, error) {
 	if b.config == nil {
 		b.InstallFlags() // just to be sure
-
 		config, err := b.CustomMetricsAdapterServerOptions.Config()
 		if err != nil {
 			return nil, err
@@ -234,6 +233,7 @@ func (b *AdapterBase) Config() (*apiserver.Config, error) {
 func (b *AdapterBase) Server() (*apiserver.CustomMetricsAdapterServer, error) {
 	if b.server == nil {
 		config, err := b.Config()
+
 		if err != nil {
 			return nil, err
 		}

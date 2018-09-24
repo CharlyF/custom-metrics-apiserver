@@ -20,7 +20,7 @@ and set up the API server, passing in your providers.
 
 More information can be found in the [getting started
 guide](/docs/getting-started.md), and a sample implementation can be found
-in the [sample directory](/sample).
+in the [sample directory](/sample-deploy).
 
 It is *strongly* suggested that you make use of the dependency versions
 listed in [glide.yaml](/glide.yaml), as mismatched versions of Kubernetes
