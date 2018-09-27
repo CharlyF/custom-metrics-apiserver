@@ -1,4 +1,4 @@
-REGISTRY?=kubernetes-incubator
+REGISTRY?=CharlyF
 IMAGE?=k8s-test-metrics-adapter
 TEMP_DIR:=$(shell mktemp -d)
 ARCH?=amd64
@@ -10,7 +10,7 @@ VERSION?=latest
 
 all: build-test-adapter
 build-test-adapter: vendor
-	CGO_ENABLED=0 GOARCH=$(ARCH) go build -o $(OUT_DIR)/$(ARCH)/test-adapter github.com/kubernetes-incubator/custom-metrics-apiserver/test-adapter
+	CGO_ENABLED=0 GOARCH=$(ARCH) go build -o $(OUT_DIR)/$(ARCH)/test-adapter github.com/CharlyF/custom-metrics-apiserver/test-adapter
 
 vendor: glide.lock
 	glide install -v
