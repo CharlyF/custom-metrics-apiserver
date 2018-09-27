@@ -1,4 +1,4 @@
-package: github.com/custom-metrics-apiserver
+package: github.com/CharlyF/custom-metrics-apiserver
 import:
 - package: github.com/emicklei/go-restful
   version: 2.2.1  # close to kubernetes Godeps.json
@@ -30,7 +30,7 @@ import:
   - pkg/util/errors
   - pkg/util/wait
   - pkg/version
-  version: d128f427fda3db9a4d1ebbf3d54b4949a3356662
+  version: release-1.11
 
 - package: k8s.io/apiserver
   subpackages:
@@ -44,7 +44,7 @@ import:
   - pkg/server
   - pkg/server/options
   - pkg/util/logs
-  version: 4e7be504bf8670b1b36388e3ce2d097c6347373a
+  version: release-1.11
 
 - package: k8s.io/client-go
   subpackages:
@@ -57,7 +57,7 @@ import:
   - rest
   - testing
   - tools/clientcmd
-  version: bdfc4cfc125f556bfe46fff68207767a605b64ed
+  version: release-8.0
 
 - package: k8s.io/metrics
   subpackages:
@@ -65,7 +65,7 @@ import:
   - pkg/apis/custom_metrics/install
   - pkg/apis/external_metrics
   - pkg/apis/external_metrics/install
-  version: c368fb9b71245441cd3268fffdba58b28b9b4863
+  version: release-1.11
 
 testImport:
 - package: github.com/stretchr/testify

@@ -22,8 +22,6 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/stretchr/testify/require"
-
 	"k8s.io/api/admission/v1beta1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
@@ -36,8 +34,8 @@ import (
 // TestAdmit tests that MutatingWebhook#Admit works as expected
 func TestAdmit(t *testing.T) {
 	scheme := runtime.NewScheme()
-	require.NoError(t, v1beta1.AddToScheme(scheme))
-	require.NoError(t, corev1.AddToScheme(scheme))
+	v1beta1.AddToScheme(scheme)
+	corev1.AddToScheme(scheme)
 
 	testServer := webhooktesting.NewTestServer(t)
 	testServer.StartTLS()
@@ -50,10 +48,7 @@ func TestAdmit(t *testing.T) {
 	stopCh := make(chan struct{})
 	defer close(stopCh)
 
-	testCases := append(webhooktesting.NewMutatingTestCases(serverURL),
-		webhooktesting.NewNonMutatingTestCases(serverURL)...)
-
-	for _, tt := range testCases {
+	for _, tt := range webhooktesting.NewTestCases(serverURL) {
 		wh, err := NewMutatingWebhook(nil)
 		if err != nil {
 			t.Errorf("%s: failed to create mutating webhook: %v", tt.Name, err)
@@ -108,8 +103,8 @@ func TestAdmit(t *testing.T) {
 // TestAdmitCachedClient tests that MutatingWebhook#Admit should cache restClient
 func TestAdmitCachedClient(t *testing.T) {
 	scheme := runtime.NewScheme()
-	require.NoError(t, v1beta1.AddToScheme(scheme))
-	require.NoError(t, corev1.AddToScheme(scheme))
+	v1beta1.AddToScheme(scheme)
+	corev1.AddToScheme(scheme)
 
 	testServer := webhooktesting.NewTestServer(t)
 	testServer.StartTLS()

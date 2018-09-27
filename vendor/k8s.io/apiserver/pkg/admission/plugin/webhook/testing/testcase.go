@@ -95,7 +95,7 @@ func newAttributesRecord(object metav1.Object, oldObject metav1.Object, kind sch
 		UID:  "webhook-test",
 	}
 
-	return admission.NewAttributesRecord(object.(runtime.Object), oldObject.(runtime.Object), kind, namespace, name, gvr, subResource, admission.Update, false, &userInfo)
+	return admission.NewAttributesRecord(object.(runtime.Object), oldObject.(runtime.Object), kind, namespace, name, gvr, subResource, admission.Update, &userInfo)
 }
 
 // NewAttribute returns static admission Attributes for testing.
@@ -155,11 +155,8 @@ type Test struct {
 	ErrorContains    string
 }
 
-// NewNonMutatingTestCases returns test cases with a given base url.
-// All test cases in NewNonMutatingTestCases have no Patch set in
-// AdmissionResponse. The test cases are used by both MutatingAdmissionWebhook
-// and ValidatingAdmissionWebhook.
-func NewNonMutatingTestCases(url *url.URL) []Test {
+// NewTestCases returns test cases with a given base url.
+func NewTestCases(url *url.URL) []Test {
 	policyFail := registrationv1beta1.Fail
 	policyIgnore := registrationv1beta1.Ignore
 	ccfgURL := urlConfigGenerator{url}.ccfgURL
@@ -186,6 +183,64 @@ func NewNonMutatingTestCases(url *url.URL) []Test {
 				NamespaceSelector: &metav1.LabelSelector{},
 			}},
 			ExpectAllow: true,
+		},
+		{
+			Name: "match & remove label",
+			Webhooks: []registrationv1beta1.Webhook{{
+				Name:              "removeLabel",
+				ClientConfig:      ccfgSVC("removeLabel"),
+				Rules:             matchEverythingRules,
+				NamespaceSelector: &metav1.LabelSelector{},
+			}},
+			ExpectAllow:      true,
+			AdditionalLabels: map[string]string{"remove": "me"},
+			ExpectLabels:     map[string]string{"pod.name": "my-pod"},
+		},
+		{
+			Name: "match & add label",
+			Webhooks: []registrationv1beta1.Webhook{{
+				Name:              "addLabel",
+				ClientConfig:      ccfgSVC("addLabel"),
+				Rules:             matchEverythingRules,
+				NamespaceSelector: &metav1.LabelSelector{},
+			}},
+			ExpectAllow:  true,
+			ExpectLabels: map[string]string{"pod.name": "my-pod", "added": "test"},
+		},
+		{
+			Name: "match CRD & add label",
+			Webhooks: []registrationv1beta1.Webhook{{
+				Name:              "addLabel",
+				ClientConfig:      ccfgSVC("addLabel"),
+				Rules:             matchEverythingRules,
+				NamespaceSelector: &metav1.LabelSelector{},
+			}},
+			IsCRD:        true,
+			ExpectAllow:  true,
+			ExpectLabels: map[string]string{"crd.name": "my-test-crd", "added": "test"},
+		},
+		{
+			Name: "match CRD & remove label",
+			Webhooks: []registrationv1beta1.Webhook{{
+				Name:              "removeLabel",
+				ClientConfig:      ccfgSVC("removeLabel"),
+				Rules:             matchEverythingRules,
+				NamespaceSelector: &metav1.LabelSelector{},
+			}},
+			IsCRD:            true,
+			ExpectAllow:      true,
+			AdditionalLabels: map[string]string{"remove": "me"},
+			ExpectLabels:     map[string]string{"crd.name": "my-test-crd"},
+		},
+		{
+			Name: "match & invalid mutation",
+			Webhooks: []registrationv1beta1.Webhook{{
+				Name:              "invalidMutation",
+				ClientConfig:      ccfgSVC("invalidMutation"),
+				Rules:             matchEverythingRules,
+				NamespaceSelector: &metav1.LabelSelector{},
+			}},
+			ErrorContains: "invalid character",
 		},
 		{
 			Name: "match & disallow",
@@ -348,74 +403,6 @@ func NewNonMutatingTestCases(url *url.URL) []Test {
 				NamespaceSelector: &metav1.LabelSelector{},
 			}},
 			ErrorContains: "Webhook response was absent",
-		},
-		// No need to test everything with the url case, since only the
-		// connection is different.
-	}
-}
-
-// NewMutatingTestCases returns test cases with a given base url.
-// All test cases in NewMutatingTestCases have Patch set in
-// AdmissionResponse. The test cases are only used by both MutatingAdmissionWebhook.
-func NewMutatingTestCases(url *url.URL) []Test {
-	return []Test{
-		{
-			Name: "match & remove label",
-			Webhooks: []registrationv1beta1.Webhook{{
-				Name:              "removeLabel",
-				ClientConfig:      ccfgSVC("removeLabel"),
-				Rules:             matchEverythingRules,
-				NamespaceSelector: &metav1.LabelSelector{},
-			}},
-			ExpectAllow:      true,
-			AdditionalLabels: map[string]string{"remove": "me"},
-			ExpectLabels:     map[string]string{"pod.name": "my-pod"},
-		},
-		{
-			Name: "match & add label",
-			Webhooks: []registrationv1beta1.Webhook{{
-				Name:              "addLabel",
-				ClientConfig:      ccfgSVC("addLabel"),
-				Rules:             matchEverythingRules,
-				NamespaceSelector: &metav1.LabelSelector{},
-			}},
-			ExpectAllow:  true,
-			ExpectLabels: map[string]string{"pod.name": "my-pod", "added": "test"},
-		},
-		{
-			Name: "match CRD & add label",
-			Webhooks: []registrationv1beta1.Webhook{{
-				Name:              "addLabel",
-				ClientConfig:      ccfgSVC("addLabel"),
-				Rules:             matchEverythingRules,
-				NamespaceSelector: &metav1.LabelSelector{},
-			}},
-			IsCRD:        true,
-			ExpectAllow:  true,
-			ExpectLabels: map[string]string{"crd.name": "my-test-crd", "added": "test"},
-		},
-		{
-			Name: "match CRD & remove label",
-			Webhooks: []registrationv1beta1.Webhook{{
-				Name:              "removeLabel",
-				ClientConfig:      ccfgSVC("removeLabel"),
-				Rules:             matchEverythingRules,
-				NamespaceSelector: &metav1.LabelSelector{},
-			}},
-			IsCRD:            true,
-			ExpectAllow:      true,
-			AdditionalLabels: map[string]string{"remove": "me"},
-			ExpectLabels:     map[string]string{"crd.name": "my-test-crd"},
-		},
-		{
-			Name: "match & invalid mutation",
-			Webhooks: []registrationv1beta1.Webhook{{
-				Name:              "invalidMutation",
-				ClientConfig:      ccfgSVC("invalidMutation"),
-				Rules:             matchEverythingRules,
-				NamespaceSelector: &metav1.LabelSelector{},
-			}},
-			ErrorContains: "invalid character",
 		},
 		// No need to test everything with the url case, since only the
 		// connection is different.
