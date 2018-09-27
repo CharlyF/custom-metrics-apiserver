@@ -210,12 +210,10 @@ func (p *testingProvider) metricFor(value resource.Quantity, name types.Namespac
 	if err != nil {
 		return nil, err
 	}
-	metricId := custom_metrics.MetricIdentifier{
-		Name: info.Metric,
-	}
+
 	return &custom_metrics.MetricValue{
 		DescribedObject: objRef,
-		Metric:     	 metricId,
+		MetricName:      info.Metric,
 		Timestamp:       metav1.Time{time.Now()},
 		Value:           value,
 	}, nil
