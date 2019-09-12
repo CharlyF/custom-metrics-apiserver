@@ -20,8 +20,8 @@ import (
 	"context"
 	"fmt"
 
-	cm_rest "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/apiserver/registry/rest"
-	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
+	cm_rest "github.com/CharlyF/custom-metrics-apiserver/pkg/apiserver/registry/rest"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/provider"
 
 	metainternalversion "k8s.io/apimachinery/pkg/apis/meta/internalversion"
 	"k8s.io/apimachinery/pkg/labels"

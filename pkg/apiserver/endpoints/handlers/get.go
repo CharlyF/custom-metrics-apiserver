@@ -33,7 +33,8 @@ import (
 	"k8s.io/apiserver/pkg/endpoints/request"
 	utiltrace "k8s.io/utils/trace"
 
-	cm_rest "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/apiserver/registry/rest"
+	cm_rest "github.com/CharlyF/custom-metrics-apiserver/pkg/apiserver/registry/rest"
+	"k8s.io/apiserver/pkg/endpoints/handlers/negotiation"
 )
 
 func ListResourceWithOptions(r cm_rest.ListerWithOptions, scope handlers.RequestScope) http.HandlerFunc {
@@ -130,8 +131,7 @@ func ListResourceWithOptions(r cm_rest.ListerWithOptions, scope handlers.Request
 				return
 			}
 		}
-
-		responsewriters.WriteObject(http.StatusOK, scope.Kind.GroupVersion(), scope.Serializer, result, w, req)
+		responsewriters.WriteObjectNegotiated(scope.Serializer, negotiation.DefaultEndpointRestrictions,  scope.Kind.GroupVersion(), w, req, http.StatusOK, result)
 		trace.Step(fmt.Sprintf("Writing http response done (%d items)", numberOfItems))
 	}
 }

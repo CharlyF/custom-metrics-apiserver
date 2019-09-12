@@ -35,8 +35,8 @@ import (
 	"k8s.io/apiserver/pkg/registry/rest"
 
 	"github.com/emicklei/go-restful"
-	cm_handlers "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/apiserver/endpoints/handlers"
-	cm_rest "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/apiserver/registry/rest"
+	cm_handlers "github.com/CharlyF/custom-metrics-apiserver/pkg/apiserver/endpoints/handlers"
+	cm_rest "github.com/CharlyF/custom-metrics-apiserver/pkg/apiserver/registry/rest"
 )
 
 // NB: the contents of this file should mostly be a subset of the functionality
@@ -285,7 +285,7 @@ func (n MetricsNaming) GenerateLink(requestInfo *request.RequestInfo, obj runtim
 
 func restfulListResource(r rest.Lister, rw rest.Watcher, scope handlers.RequestScope, forceWatch bool, minRequestTimeout time.Duration) restful.RouteFunction {
 	return func(req *restful.Request, res *restful.Response) {
-		handlers.ListResource(r, rw, scope, forceWatch, minRequestTimeout)(res.ResponseWriter, req.Request)
+		handlers.ListResource(r, rw, &scope, forceWatch, minRequestTimeout)(res.ResponseWriter, req.Request)
 	}
 }
 

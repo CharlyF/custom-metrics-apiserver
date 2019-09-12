@@ -25,9 +25,9 @@ import (
 	"k8s.io/apiserver/pkg/endpoints/discovery"
 	genericapiserver "k8s.io/apiserver/pkg/server"
 
-	specificapi "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/apiserver/installer"
-	"github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
-	metricstorage "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/registry/custom_metrics"
+	specificapi "github.com/CharlyF/custom-metrics-apiserver/pkg/apiserver/installer"
+	"github.com/CharlyF/custom-metrics-apiserver/pkg/provider"
+	metricstorage "github.com/CharlyF/custom-metrics-apiserver/pkg/registry/custom_metrics"
 	"k8s.io/metrics/pkg/apis/custom_metrics"
 )
 
