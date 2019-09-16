@@ -23,7 +23,7 @@ like so:
 $ mkdir $GOPATH/src/github.com/$USER/$REPO
 $ cd $GOPATH/src/github.com/$USER/$REPO
 $ glide init
-$ glide get github.com/kubernetes-incubator/custom-metrics-apiserver
+$ glide get github.com/CharlyF/custom-metrics-apiserver
 ```
 
 ## Writing the Code
@@ -66,7 +66,7 @@ import (
     "k8s.io/client-go/dynamic"
     "k8s.io/metrics/pkg/apis/custom_metrics"
 
-    "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
+    "github.com/CharlyF/custom-metrics-apiserver/pkg/provider"
     "k8s.io/metrics/pkg/apis/external_metrics"
 )
 ```
@@ -321,8 +321,8 @@ import (
     "k8s.io/apimachinery/pkg/util/wait"
     "k8s.io/component-base/logs"
 
-    basecmd "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/cmd"
-    "github.com/kubernetes-incubator/custom-metrics-apiserver/pkg/provider"
+    basecmd "github.com/CharlyF/custom-metrics-apiserver/pkg/cmd"
+    "github.com/CharlyF/custom-metrics-apiserver/pkg/provider"
 
     // make this the path to the provider that you just wrote
     yourprov "github.com/user/repo/pkg/provider"
